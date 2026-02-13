@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+<title>Happy Valentine 💗</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="music" src="coldiacmusic.mp3" autoplay loop></audio>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <h1>Will you be my Valentine? 💗</h1>
+  <button onclick="nextPage(2)">YES</button>
+  <button class="no-btn" onmouseover="moveNo()">NO</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <h1>Yayy!!! I know you will say YES! 🩷</h1>
+  <button onclick="nextPage(3)">Okay</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <h1>Kapan kita ngedate??? 🗓️</h1>
+  <input type="date" id="dateInput" class="date-input">
+  <br><br>
+  <button onclick="checkDate()">Okay</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+  <h1>Mau ngedate dimana???</h1>
+
+  <div class="option" onclick="choosePlace('cafe')">
+    <img src="cafe.png">
+    <p>Cafe</p>
+  </div>
+
+  <div class="option" onclick="choosePlace('kotalama')">
+    <img src="kotlam.png">
+    <p>Kota Lama</p>
+  </div>
+
+  <div class="option" onclick="choosePlace('mall')">
+    <img src="mall.png">
+    <p>Mall</p>
+  </div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+  <h1 id="placeText"></h1>
+  <button onclick="nextPage(6)">Okay</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+  <h1>Okay! Sekarang, kamu buka hadiahnya ya!! Tap kadonya 👇🏻</h1>
+  <div class="gift" onclick="openGift()">🎁</div>
+  <div class="voucher" id="voucher">
+    Kamu dapet FREE Chocolate, Hug, and Kiss from Rara! 😘<br>
+    Klaim vouchernya besok ya, xixi 💗
+  </div>
+  <button onclick="nextPage(7)">Okay</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page" id="page7">
+  <h1>Happy Valentine, By! 🩷</h1>
+  <p>
+    Meskipun hari kasih sayang cuma 1 hari dalam setahun,<br>
+    tapi aku sayang kamu tiap harii.<br>
+    Semoga kita happy terus yaa!<br>
+    Love Youu!!! 🩷
+  </p>
+  <img src="fotokita.jpeg" class="final-img">
+  <h3>See You !!! 🎀</h3>
+</div>
+
+</body>
+</html>
