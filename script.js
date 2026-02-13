@@ -60,6 +60,7 @@ function choosePlace(place) {
   selectedPlace = place;
 
   let placeText = "";
+  let selectedDate = "";
   let placeLabel = "";
 
   if(place === "cafe"){
@@ -115,6 +116,7 @@ document.addEventListener("click", function() {
     music.play().catch(()=>{});
   }
 }, { once: true });
+
 
 
 
