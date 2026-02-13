@@ -78,10 +78,10 @@ function choosePlace(place) {
   const phoneNumber = "6282328814240";
 
   const message = `
-Halo Raraaa 💗
+Sayangg 💗
 
-Aku pilih tanggal: ${selectedDate}
-Aku pilih tempat: ${placeLabel}
+Kita ngedate tanggal: ${selectedDate}
+Di: ${placeLabel}
 
 Siap-siap yaa 😘
 `;
@@ -115,6 +115,7 @@ document.addEventListener("click", function() {
     music.play().catch(()=>{});
   }
 }, { once: true });
+
 
 
 
