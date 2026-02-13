@@ -86,7 +86,7 @@ Aku pilih tempat: ${placeLabel}
 Siap-siap yaa 😘
 `;
 
-  const whatsappURL = "https://wa.me/" + phoneNumber + encodeURIComponent(message);
+  const whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
 
   window.open(whatsappURL, "_blank");
 
@@ -115,5 +115,6 @@ document.addEventListener("click", function() {
     music.play().catch(()=>{});
   }
 }, { once: true });
+
 
 
