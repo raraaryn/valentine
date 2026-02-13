@@ -75,7 +75,7 @@ function choosePlace(place) {
 
   document.getElementById("placeText").innerText = placeText;
 
-  const phoneNumber = "628XXXXXXXXXX";
+  const phoneNumber = "6282328814240";
 
   const message = `
 Halo Raraaa 💗
@@ -115,3 +115,4 @@ document.addEventListener("click", function() {
     music.play().catch(()=>{});
   }
 }, { once: true });
+
