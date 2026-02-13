@@ -54,7 +54,7 @@ function saveDateAndNext() {
   }
 
   Swal.fire({
-    title: "Yayyy! 🥰",
+    title: "Okay Sayangg! 🥰",
     text: "Aku catet yaa!",
     icon: "success",
     confirmButtonColor: "#ff4d88"
@@ -122,6 +122,7 @@ document.addEventListener("click", function() {
     music.play().catch(()=>{});
   }
 }, { once: true });
+
 
 
 
