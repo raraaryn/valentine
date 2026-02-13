@@ -51,8 +51,9 @@ function saveDateAndNext() {
   if (!selectedDate) {
     alert("Pilih tanggal dulu dong sayang 😚");
     return;
+  }
 
-    Swal.fire({
+  Swal.fire({
     title: "Yayyy! 🥰",
     text: "Aku catet yaa!",
     icon: "success",
@@ -60,9 +61,6 @@ function saveDateAndNext() {
   }).then(() => {
     nextPage(4);
   });
-  }
-
-  nextPage(4);
 }
 
 function choosePlace(place) {
@@ -124,6 +122,7 @@ document.addEventListener("click", function() {
     music.play().catch(()=>{});
   }
 }, { once: true });
+
 
 
 
