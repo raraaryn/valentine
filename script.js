@@ -51,6 +51,15 @@ function saveDateAndNext() {
   if (!selectedDate) {
     alert("Pilih tanggal dulu dong sayang 😚");
     return;
+
+    Swal.fire({
+    title: "Yayyy! 🥰",
+    text: "Aku catet yaa!",
+    icon: "success",
+    confirmButtonColor: "#ff4d88"
+  }).then(() => {
+    nextPage(4);
+  });
   }
 
   nextPage(4);
@@ -115,6 +124,7 @@ document.addEventListener("click", function() {
     music.play().catch(()=>{});
   }
 }, { once: true });
+
 
 
 
